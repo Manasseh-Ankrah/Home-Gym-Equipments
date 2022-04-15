@@ -62,6 +62,36 @@ body {
   font-size: 45px;
 }
 
+.contact-img {
+  height: 350px;
+}
+
+.list-cont {
+  list-style: none;
+}
+
+.icon-check{
+  font-size: 20px;
+  color: #fff;
+}
+
+.info-header {
+  color: #fff;
+  /* color: #03899b; */
+}
+
+.info-content {
+  background-color: #03899b;
+  color: #fff;
+}
+
+.workshop-video-cont{
+  background-color: gainsboro;
+
+}
+
+
+
 
 /* login */
 

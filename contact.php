@@ -1,7 +1,3 @@
-<?php
-require_once('counter.php');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -95,12 +91,47 @@ require_once('counter.php');
         </div>
     </nav>
 
-    <section id="">
-        <div class="information" style="background-image: url(gym_images/gym_treadmill_bg4.jpg);">
-            <h1 class="contact-text">Contact Us</h1>
-
+    <section>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="gym_images/gym_treadmill_bg4.jpg" class="d-block w-100 contact-img" alt="gym_images/gym_treadmill_bg4.jpg">
+                    <div class="carousel-caption d-none d-md-block bg-header">
+                        <h1>Contact Us</h1>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-7" style="float: left;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.909007779!2d-0.13186558523396164!3d5
+.580467895954142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzQnNDkuNyJOIDDCsDA3JzQ2LjgiVw!5e0!3m2!1sen!
+2sgh!4v1593103654859!5m2!1sen!2sgh" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="col-md-5">
+                <div class="form contact-form">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="text-center"><button class="btn btn-primary mt-2" type="submit">Send Message</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
