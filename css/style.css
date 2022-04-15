@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #c83ed5;
+  background-color: #ba72c0;
   height: 240px;
 }
 
@@ -84,18 +84,38 @@ body {
   background-color: #03899b;
   color: #fff;
 }
+.feature-content {
+  background-color: #cac703;
+  color: #fff;
+}
 
 .workshop-video-cont{
   background-color: gainsboro;
+}
 
+.featured-img {
+  height: 370px;
+}
+
+
+.register-body {
+  background-color: #3ec1d5;
+  overflow-y: hidden;
+}
+
+.register-row {
+  display: flex;
+  overflow-y: hidden;
+  justify-content:center;
+  margin-top:30px;
 }
 
 
 
 
-/* login */
 
-/* body#LoginForm{ background-image:url("https://hdwallsource.com/img/2014/9/blur-26347-27038-hd-wallpapers.jpg"); background-repeat:no-repeat; background-position:center; background-size:cover; padding:10px;} */
+
+
 
 .form-heading { color:#fff; font-size:23px;}
 .panel h2{ color:#444444; font-size:18px; margin:0 0 8px 0;}

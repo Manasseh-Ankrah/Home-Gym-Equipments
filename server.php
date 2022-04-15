@@ -35,9 +35,9 @@ if (count($_POST) > 0 && $captcha == true) {
         }
     }
 }
-if (isset($_SESSION["user_id"])) {
-    header("Location:wanted.php");
-}
+// if (isset($_SESSION["user_id"])) {
+//     header("Location:wanted.php");
+// }
 
 
 
@@ -85,7 +85,7 @@ $result = $conn->query($fetch_user);
 if ($result->num_rows > 0) {
     // output data of each row
     while ($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"] . " - Name: " . $row["firstname"] . " " . $row["lastname"] . "<br>";
+        // echo "id: " . $row["id"] . " - Name: " . $row["firstname"] . " " . $row["lastname"] . "<br>";
     }
 } else {
     echo "0 results";

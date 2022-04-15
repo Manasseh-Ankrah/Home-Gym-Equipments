@@ -58,7 +58,7 @@ require_once('counter.php');
                         <a class="nav-link" href="information.php">Information</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="wanted.php">Wanted</a>
+                        <a class="nav-link" href="register.php">Wanted</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="workshop.php">Workshop</a>

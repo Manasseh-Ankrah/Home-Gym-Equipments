@@ -38,11 +38,11 @@ include 'server.php';
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body style="background-color: #3ec1d5;overflow-y:hidden">
+<body class="register-body">
     <div>
         <form action="server.php" method="post">
             <div class="container">
-                <div class="row" style="display: flex;justify-content:center;margin-top:30px">
+                <div class="row register-row">
                     <div class="col-sm-6">
 
                         <h1 style="color: white;display: flex;justify-content:center">Registration</h1>
@@ -59,6 +59,9 @@ include 'server.php';
 
                         <label for="email"><b>Email Address</b></label>
                         <input class="form-control" id="email" type="email" name="email" required>
+
+                        <label for="postcode"><b>Postcode</b></label>
+                        <input class="form-control" id="postcode" type="text" name="postcode" required>
 
                         <label for="phonenumber"><b>Phone Number</b></label>
                         <input class="form-control" id="phonenumber" type="text" name="phonenumber" required>

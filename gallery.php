@@ -95,7 +95,7 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="gym_images/gym_treadmill_bg4.jpg" class="d-block w-100 contact-img" alt="gym_images/gym_treadmill_bg4.jpg">
+                    <img src="gym_images/gym_bike_bg.jpg" class="d-block w-100 contact-img" alt="gym_images/gym_treadmill_bg4.jpg">
                     <div class="carousel-caption d-none d-md-block bg-header">
                         <h1>Gallery</h1>
                     </div>
@@ -115,23 +115,71 @@
         <div class="row">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-target="#image-gallery">
-                        <img class="img-thumbnail" src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Another alt text">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="" data-target="#image-gallery">
+                        <img class="img-thumbnail" src="gym_images/gym10.webp" alt="Another alt text">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-target="#image-gallery">
-                        <img class="img-thumbnail" src="https://images.pexels.com/photos/158971/pexels-photo-158971.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Another alt text">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="" data-target="#image-gallery">
+                        <img class="img-thumbnail" src="gym_images/hex-dumbbell_hero.jpg" alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="" data-target="#image-gallery">
+                        <img class="img-thumbnail" src="gym_images/gym6.webp" alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1" data-image="" data-target="#image-gallery">
+                        <img class="img-thumbnail" src="gym_images/bike1.jpg" alt="Another alt text">
+                    </a>
+                </div>
+            </div>
+            <div class="row mt-3 mb-3">
+                <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                    <div class="card">
+                        <img src="gym_images/bike3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Electronic Bicycle.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                    <div class="card">
+                        <img src="gym_images/treadmill.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Treadmill Double handle.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-xs-6 thumb ">
+                    <div class="card">
+                        <img src="gym_images/lliptical.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">Exercise Swing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="" data-target="#image-gallery">
+                        <img class="img-thumbnail" src="gym_images/gym9.jpeg" alt="Another alt text">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="gym_images/gym9.jpg" data-target="#image-gallery">
+                        <img class="img-thumbnail" src="gym_images/gym6.webp" alt="Another alt text">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                     <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="" data-image="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-target="#image-gallery">
-                        <img class="img-thumbnail" src="https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Another alt text">
+                        <img class="img-thumbnail" src="gym_images/unica_2.jpg" alt="Another alt text">
                     </a>
                 </div>
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1" data-image="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" data-target="#image-gallery">
-                        <img class="img-thumbnail" src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Another alt text">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal" data-title="Test1" data-image="" data-target="#image-gallery">
+                        <img class="img-thumbnail" src="gym_images/gym3.webp" alt="Another alt text">
                     </a>
                 </div>
             </div>
