@@ -49,17 +49,16 @@ if (isset($_POST['create'])) {
     $lastname   = $_POST['lastname'];
     $username   = $_POST['user_name'];
     $email  = $_POST['email'];
+    $postcode  = $_POST['postcode'];
     $phonenumber = $_POST['phonenumber'];
     $password = $_POST['password'];
     $display_name = $_POST['user_name'];
 
-    $sql = "Insert into users (firstname, lastname, user_name, email, phonenumber, user_password,display_name) 
-    VALUES('$firstname','$lastname','$username','$email',$phonenumber,'$password','$display_name')";
+    $sql = "Insert into users (firstname, lastname, user_name, email,postcode, phonenumber, user_password,display_name) 
+    VALUES('$firstname','$lastname','$username','$email','$postcode',$phonenumber,'$password','$display_name')";
 
     $result = mysqli_query($conn, $sql);
-    // $stmtinsert = $db->prepare($sql);
     print($result);
-    // $result = $stmtinsert->execute([$firstname, $lastname, $username, $email, $phonenumber, $password, $display_name]);
     if ($result) {
         echo 'Successfully Saved';
         header('location:wanted.php');
@@ -67,12 +66,6 @@ if (isset($_POST['create'])) {
         echo 'Error While saving data';
     }
 }
-
-
-
-// RSS FEED
-
-
 
 
 

@@ -33,7 +33,7 @@ require_once('counter.php');
     <title>Document</title>
 </head>
 
-<body>
+<body class="index-body">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -73,10 +73,9 @@ require_once('counter.php');
                         <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav d-flex flex-row ms-auto me-3">
+                <!-- <ul class="navbar-nav d-flex flex-row ms-auto me-3">
                     <li class="nav-item me-3 me-lg-0 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                            <!-- <a href="#">Account</a> -->
                             <i class="fas fa-plus"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -90,7 +89,18 @@ require_once('counter.php');
                             </li>
                         </ul>
                     </li>
-                </ul>
+                </ul> -->
+
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle m-3" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Account
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button">View Profile</button>
+                        <button class="dropdown-item" type="button">Edit Profile</button>
+                        <button class="dropdown-item" type="button">Logout</button>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -215,7 +225,7 @@ require_once('counter.php');
                         echo  $counter;
                         ?>
                     </h4>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="#" class="btn btn-primary">Counter</a>
                 </div>
             </div>
         </div>
@@ -239,10 +249,11 @@ require_once('counter.php');
                 </div>
             </div>
         </div>
-        <div class="row mt-5 mb-5">
-            <div class="col-md-6 video-container">
+        <div class="row mt-5 mb-5 video-container">
+            <div class="col-md-8 ">
                 <div class="card mb-3 ">
-                    <img src="gym_images/gym1.jpeg" class="card-img-top middle-video" alt="gym_images/gym1.jpeg">
+                    <video src="gym_images/gym-video.mp4" controls="true" autoplay="true"></video>
+                    <!-- <img src="gym_images/gym1.jpeg" class="card-img-top middle-video" alt="gym_images/gym1.jpeg"> -->
                 </div>
             </div>
         </div>
@@ -260,6 +271,15 @@ require_once('counter.php');
                 <div class="card mb-3">
                     <img src="gym_images/gym_bg2.jpg" class="card-img-top middle-img" alt="gym_images/gym1.jpeg">
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 mb-5 video-container">
+        <div class="col-md-8 ">
+            <div class="card mb-3 ">
+                <video src="gym_images/gym-video.mp4" controls="true" autoplay="true"></video>
+                <!-- <img src="gym_images/gym1.jpeg" class="card-img-top middle-video" alt="gym_images/gym1.jpeg"> -->
             </div>
         </div>
     </div>
@@ -306,11 +326,56 @@ require_once('counter.php');
 
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery-3.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+
+    <!-- <script src="js/bootstrap.js"></script> -->
+    <!-- <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
     <script src="js/main.js"></script>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <!-- Ajax and javascript -->
+    <script>
+        // Event listener to select token
+        document.getElementById('rss-input').addEventListener('change', function() {
+            showRSS(this.value);
+        });
+
+
+        // Send token to get rss feed
+        function showRSS(token) {
+            var rssOutput = document.getElementById('rss-output');
+            if (token.length == 0) {
+                rssOutput.innerHTML = "";
+                return;
+            }
+
+            if (XMLHttpRequest) {
+                var xhr = new XMLHttpRequest();
+            } else {
+                var xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            xhr.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    rssOutput.innerHTML = this.responseText;
+                } else {
+                    rssOutput.innerHTML = 'Fetching RSS feed from ' + token.toUpperCase() + ', please wait...';
+                }
+            }
+
+            xhr.open('GET', 'getrssfeed.php?q=' + token, true);
+            xhr.send();
+        }
+
+        // Clear the feed
+        document.getElementById('clear-rss').addEventListener('click', function() {
+            document.getElementById('rss-output').innerHTML = "";
+        });
+    </script>
 </body>
 
 </html>

@@ -44,9 +44,8 @@ include 'server.php';
             <div class="container">
                 <div class="row register-row">
                     <div class="col-sm-6">
-
-                        <h1 style="color: white;display: flex;justify-content:center">Registration</h1>
-                        <P style="color: white;display: flex;justify-content:center">Fill up the form with correct values.</P>
+                        <h1 class="header-text">Registration</h1>
+                        <P class="header-text">Fill up the form with correct values.</P>
                         <hr class="mb-3">
                         <label for="firstname"><b>First Name</b></label>
                         <input class="form-control" id="firstname" type="text" name="firstname" required>
@@ -70,7 +69,7 @@ include 'server.php';
                         <input class="form-control" id="password" type="password" name="password" required>
                         <hr class="mb-3">
                         <div style="display: flex;justify-content:center;align-items:center;">
-                            <input type="submit" class="btn btn-primary" style="color: white;display: flex;justify-content:center" id="register" name="create" value="Sign Up">
+                            <input type="submit" class="btn btn-primary" class="header-text" id="register" name="create" value="Sign Up">
                         </div>
 
                         <!-- <button class="btn btn-primary"><a href="wanted.php" class="text-light">Register</a></button> -->
