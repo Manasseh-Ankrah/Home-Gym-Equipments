@@ -122,8 +122,28 @@ body {
   color: #fff;
 }
 
+.profile-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: #fff; */
+}
+
 .wanted-slider {
   height: 50vh;
+}
+
+.user-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3ec1d5 !important;
+}
+
+.user-profile-icon {
+  font-size: 110px;
+  color: #fff;
+
 }
 
 
