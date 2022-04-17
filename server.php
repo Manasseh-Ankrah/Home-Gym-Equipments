@@ -10,6 +10,9 @@ if (count($_POST) > 0 && isset($_POST["captcha_code"]) && $_POST["captcha_code"]
     $captcha = false;
     $message = "Enter Correct Captcha Code";
 }
+// else if (isset($_SESSION["user_id"])) {
+//     header("Location:wanted.php");
+// };
 // $mysqli = new mysqli('localhost', 'root', '', 'blog_examples');
 $ip = $_SERVER['REMOTE_ADDR'];
 $result = $conn->query("SELECT count(ip_address) AS failed_login_attempt FROM failed_login WHERE ip_address = '$ip'  AND date BETWEEN DATE_SUB( NOW() , INTERVAL 1 DAY ) AND NOW()");
@@ -35,10 +38,11 @@ if (count($_POST) > 0 && $captcha == true) {
         }
     }
 }
-// if (isset($_SESSION["user_id"])) {
-//     header("Location:wanted.php");
-// }
 
+
+if (isset($_SESSION["user_id"])) {
+    header("Location:wanted.php");
+};
 
 
 // Registration

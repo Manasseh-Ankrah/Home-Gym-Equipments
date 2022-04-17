@@ -35,7 +35,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <!-- <i class="fab fa-github fa-2x mx-3 ps-1"></i> -->
-                <h3 class="p-1">HGE</h3>
+                <h3 class="hge"><a href="index.php" class="logo-text">HGE</a></h3>
             </a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -54,7 +54,7 @@
                         <a class="nav-link" href="information.php">Information</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="wanted.php">Wanted</a>
+                        <a class="nav-link" href="register.php">Wanted</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="workshop.php">Workshop</a>
@@ -69,24 +69,17 @@
                         <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav d-flex flex-row ms-auto me-3">
-                    <li class="nav-item me-3 me-lg-0 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                            <!-- <a href="#">Account</a> -->
-                            <i class="fas fa-plus"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+
+                <div class="dropdown drop-cont">
+                    <button class="btn btn-primary dropdown-toggle m-3" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Account
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                        <button class="dropdown-item" type="button"><a href="viewProfile.php" class="drop-item">View Profile</a></button>
+                        <button class="dropdown-item" type="button"><a href="editProfile.php" class="drop-item">Edit Profile</a></button>
+                        <button class="dropdown-item" type="button"><a href="logout.php" class="drop-item">Logout</a></button>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -136,46 +129,66 @@
 
 
     <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
+        <div class="container">
+            <div class="row">
+                <h4 class="text-center mt-5">Site Map</h4>
+                <div class="col-md-4 col-sm-6 mt-5">
+                    <ul style="margin-left:40px;display: flex;justify-content:flex-start;flex-direction:column;align-items:flex-start">
+                        <h6>You are here - <b style="color: yellow;">Contact</b></h6>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 mt-5">
+                    <ul class="footer-list">
+                        <h6>Useful Links</h6>
+                        <li><a class="footer-list-item" href="index.php">Home</a></li>
+                        <li><a class="footer-list-item" href="information.php">Information</a></li>
+                        <li><a class="footer-list-item" href="register.php">Wanted</a></li>
+                        <li><a class="footer-list-item" href="workshop.php">Workshop</a></li>
+                        <li><a class="footer-list-item" href="gallery.php">Gallery</a></li>
+                        <li><a class="footer-list-item" href="featured.php">Featured</a></li>
+                        <li><a class="footer-list-item" href="contact.php">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 mt-5">
+                    <ul class="footer-list">
+                        <h6>Product Categories</h6>
+                        <li><a class="footer-list-item">Wearable Technologies</a></li>
+                        <li><a class="footer-list-item">Dumbells</a></li>
+                        <li><a class="footer-list-item">Inclined Benches</a></li>
+                        <li><a class="footer-list-item">Foldable Mats</a></li>
+                        <li><a class="footer-list-item">Steppers</a></li>
+                        <li><a class="footer-list-item">Gym Sneakers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
         <div class="container text-center p-4 pb-0">
-            <!-- Section: Social media -->
             <section class="mb-4 footer-icons">
-                <!-- Facebook -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
 
-                <!-- Twitter -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-                <!-- Google -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-                <!-- Instagram -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
-                <!-- Linkedin -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
 
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
             </section>
-            <!-- Section: Social media -->
         </div>
-        <!-- Grid container -->
 
-        <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2020 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">HGE</a>
+            <a class="text-white" href="#">HGE</a>
         </div>
-        <!-- Copyright -->
     </footer>
 
 
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/jquery-3.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/new-bootstrap4.js"></script>
 
 </body>
 

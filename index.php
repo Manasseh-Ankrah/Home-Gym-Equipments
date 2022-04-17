@@ -39,7 +39,7 @@ require_once('counter.php');
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <!-- <i class="fab fa-github fa-2x mx-3 ps-1"></i> -->
-                <h3 class="p-1">HGE</h3>
+                <h3 class="hge"><a href="index.php" class="logo-text">HGE</a></h3>
             </a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -74,8 +74,8 @@ require_once('counter.php');
                     </li>
                 </ul>
 
-                <div class="dropdown">
-                    <button class="btn btn-primary dropdown-toggle m-3" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="dropdown drop-cont">
+                    <button class="btn btn-primary dropdown-toggle m-3 " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Account
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
@@ -234,7 +234,7 @@ require_once('counter.php');
         <div class="row mt-5 mb-5 video-container">
             <div class="col-md-8 ">
                 <div class="card mb-3 ">
-                    <video src="gym_images/gym-video.mp4" controls="true" autoplay="true"></video>
+                    <video src="videos/gym-video.mp4" controls="true" autoplay="true"></video>
                     <!-- <img src="gym_images/gym1.jpeg" class="card-img-top middle-video" alt="gym_images/gym1.jpeg"> -->
                 </div>
             </div>
@@ -260,7 +260,7 @@ require_once('counter.php');
     <div class="row mt-5 mb-5 video-container">
         <div class="col-md-8 ">
             <div class="card mb-3 ">
-                <video src="gym_images/gym-video.mp4" controls="true" autoplay="true"></video>
+                <video src="videos/gym-vid2.mp4" controls="true" autoplay="true"></video>
                 <!-- <img src="gym_images/gym1.jpeg" class="card-img-top middle-video" alt="gym_images/gym1.jpeg"> -->
             </div>
         </div>
@@ -272,51 +272,67 @@ require_once('counter.php');
 
 
     <footer class="bg-dark text-center text-white">
-        <!-- Grid container -->
+        <div class="container">
+            <div class="row">
+                <h4 class="text-center mt-5">Site Map</h4>
+                <div class="col-md-4 col-sm-6 mt-5">
+                    <ul style="margin-left:40px;display: flex;justify-content:flex-start;flex-direction:column;align-items:flex-start">
+                        <h6>You are here - <b style="color: yellow;">Home</b></h6>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 mt-5">
+                    <ul class="footer-list">
+                        <h6>Useful Links</h6>
+                        <li><a class="footer-list-item" href="index.php">Home</a></li>
+                        <li><a class="footer-list-item" href="information.php">Information</a></li>
+                        <li><a class="footer-list-item" href="register.php">Wanted</a></li>
+                        <li><a class="footer-list-item" href="workshop.php">Workshop</a></li>
+                        <li><a class="footer-list-item" href="gallery.php">Gallery</a></li>
+                        <li><a class="footer-list-item" href="featured.php">Featured</a></li>
+                        <li><a class="footer-list-item" href="contact.php">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-sm-6 mt-5">
+                    <ul class="footer-list">
+                        <h6>Product Categories</h6>
+                        <li><a class="footer-list-item">Wearable Technologies</a></li>
+                        <li><a class="footer-list-item">Dumbells</a></li>
+                        <li><a class="footer-list-item">Inclined Benches</a></li>
+                        <li><a class="footer-list-item">Foldable Mats</a></li>
+                        <li><a class="footer-list-item">Steppers</a></li>
+                        <li><a class="footer-list-item">Gym Sneakers</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
         <div class="container text-center p-4 pb-0">
-            <!-- Section: Social media -->
             <section class="mb-4 footer-icons">
-                <!-- Facebook -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
 
-                <!-- Twitter -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
 
-                <!-- Google -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
 
-                <!-- Instagram -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
 
-                <!-- Linkedin -->
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
 
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
             </section>
-            <!-- Section: Social media -->
         </div>
-        <!-- Grid container -->
 
-        <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2020 Copyright:
-            <a class="text-white" href="https://mdbootstrap.com/">HGE</a>
+            <a class="text-white" href="#">HGE</a>
         </div>
-        <!-- Copyright -->
     </footer>
 
 
 
-    <!-- <script src="js/jquery-3.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
 
-    <!-- <script src="js/bootstrap.js"></script> -->
-    <!-- <script src="js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-    <script src="js/main.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/new-bootstrap4.js"></script>
 
 
     <!-- Ajax and javascript -->
