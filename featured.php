@@ -107,9 +107,8 @@
                 <img src="gym_images/watch1.jpg" class="d-block w-100 contact-img" alt="gym_images/watch1.jpg">
 
             </div>
-            <div class="col-md-8 ml-3 feature-content text-center">
-                <h4 class="info-header mt-3">Featured Wearable Technologies!</h4>
-                <p>Wearable Technology Categories.</p>
+            <div class="col-md-8 ml-3 mt-1 feature-content text-center">
+                <h4 class="info-header mt-5">Wearable Technology Categories!</h4>
 
                 <ul class="list-cont">
                     <li class="mt-2">
@@ -145,14 +144,45 @@
 
     <div class="container mt-5">
         <div class="row">
-            <!-- <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="section-headline services-head text-center">
-                    <h2 class="mb-3 mt-3">Gallery</h2>
+            <div class="row mt-3 mb-3">
+                <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                    <div class="card">
+                        <img src="gym_images/wrist1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-text">Mini Tracker.</h4>
+                            <p class="card-text">Distance and Steps tracker.</p>
+                        </div>
+                    </div>
                 </div>
-            </div> -->
+
+                <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                    <div class="card">
+                        <img src="gym_images/wear6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-text">Apple smart watch Series 5.</h4>
+                            <p class="card-text">Apple smart watch (Series 5).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+                    <div class="card">
+                        <img src="gym_images/gloves.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-text">Smart Gloves.</h4>
+                            <p class="card-text">Smart Gloves - Solid grip.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
+
+
+
         <div class="row">
             <div class="row mt-3 mb-3">
+
                 <div class="col-lg-4 col-md-4 col-xs-6 thumb">
                     <div class="card">
                         <img src="gym_images/wear1.jpg" class="card-img-top" alt="...">
@@ -162,12 +192,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-xs-6 thumb">
+
+                <div class="col-lg-4 col-md-4 col-xs-6 thumb ">
                     <div class="card">
-                        <img src="gym_images/wear6.jpg" class="card-img-top" alt="...">
+                        <img src="gym_images/wrist2.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h4 class="card-text">Apple smart watch Series 5.</h4>
-                            <p class="card-text">Apple smart watch (Series 5).</p>
+                            <h4 class="card-text">Turbo Bracelet.</h4>
+                            <p class="card-text"> Blood Pressure Tracking Bracelet.</p>
                         </div>
                     </div>
                 </div>

@@ -138,7 +138,7 @@ require_once('counter.php');
                         <div class="row" style="display: flex;justify-content:center">
                             <div class="col-md-6">
                                 <input placeholder="Equipment Name" class="form-control" />
-                                <button class="btn btn-secondary text-center" style="margin-top:10px" id="clear-rss" type="button">Clear Feed</button>
+                                <button class="btn btn-secondary text-center" style="margin-top:10px" id="clear-rss" type="button">Search</button>
 
                             </div>
                         </div>

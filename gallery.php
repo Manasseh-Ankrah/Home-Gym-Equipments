@@ -97,21 +97,39 @@
                 <div class="carousel-item active">
                     <img src="gym_images/gym_bike_bg.jpg" class="d-block w-100 contact-img" alt="gym_images/gym_treadmill_bg4.jpg">
                     <div class="carousel-caption d-none d-md-block bg-header">
-                        <h1>Gallery</h1>
+                        <h1>Our Products</h1>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="container mt-5">
-        <div class="row">
-            <!-- <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="section-headline services-head text-center">
-                    <h2 class="mb-3 mt-3">Gallery</h2>
-                </div>
-            </div> -->
+    <div class="container-fluid rss-container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h3 class="mt-4 text-white">RSS Feed: Checkout whats new!</h3>
+                <!-- <hr class="underline text-center" /> -->
+                <form>
+                    <div class="container">
+                        <div class="row" style="display: flex;justify-content:center">
+                            <div class="col-md-6">
+                                <select id="rss-input" class="form-select" aria-label="Default select example">
+                                    <option selected>Select an rss feed</option>
+                                    <option value="1">Google</option>
+                                    <option value="2">NBC</option>
+                                </select>
+                                <button class="btn btn-danger text-center" style="margin-top:10px" id="clear-rss" type="button">Clear Feed</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <p id="rss-output"></p>
+            </div>
         </div>
+    </div>
+
+    <div class="container mt-5">
         <div class="row">
             <div class="row">
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">

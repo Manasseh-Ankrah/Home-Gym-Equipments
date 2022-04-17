@@ -104,14 +104,46 @@
         </div>
     </section>
 
-    <div class="container mt-3">
+
+    <div class="container mt-5 mb-5 ">
         <div class="row">
+            <div class="col-md-6" style="float: left;">
+                <img src="gym_images/unica_3.jpg" class="d-block w-100 contact-img" alt="gym_images/gym_treadmill_bg4.jpg">
+
+            </div>
+            <div class="col-md-6 ml-3 info-content">
+                <h4 class="info-header mt-3">Pages of Interest</h4>
+
+                <ul class="list-cont">
+                    <li class="mt-2">
+                        <i class="bi bi-check icon-check"></i> Latest Products
+                    </li>
+                    <li class="mt-2">
+                        <i class="bi bi-check icon-check"></i> Latest Fitness Information
+                    </li>
+                    <li class="mt-2">
+                        <i class="bi bi-check icon-check"></i> List of Featured Products
+                    </li>
+                    <li class="mt-2">
+                        <i class="bi bi-check icon-check"></i> Product Gallery Bands
+                    </li>
+                    <li class="mt-2">
+                        <i class="bi bi-check icon-check"></i> Wearable Technologies
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-3">
+        <!-- <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="section-headline services-head text-center">
                     <h2>What We Have</h2>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="row text-center mb-4">
             <div class="col-md-4 col-sm-4 col-xs-12 mt-2">
                 <div class="card" style="width: 18rem;">
@@ -148,40 +180,6 @@
             </div>
         </div>
     </div>
-
-    <div class="container mt-5 mb-5 ">
-        <div class="row">
-            <div class="col-md-6" style="float: left;">
-                <img src="gym_images/unica_3.jpg" class="d-block w-100 contact-img" alt="gym_images/gym_treadmill_bg4.jpg">
-
-            </div>
-            <div class="col-md-6 ml-3 info-content">
-                <h4 class="info-header mt-3">Information About Our Home Gym Equipments</h4>
-                <p> Our customers have access to some of the best home gym equipment available. The gym equipment listed here is some of the best available.</p>
-
-                <ul class="list-cont">
-                    <li class="mt-2">
-                        <i class="bi bi-check icon-check"></i> Kettlebell
-                    </li>
-                    <li class="mt-2">
-                        <i class="bi bi-check icon-check"></i> Treadmill
-                    </li>
-                    <li class="mt-2">
-                        <i class="bi bi-check icon-check"></i> Dumbells
-                    </li>
-                    <li class="mt-2">
-                        <i class="bi bi-check icon-check"></i> Elastic Bands
-                    </li>
-                    <li class="mt-2">
-                        <i class="bi bi-check icon-check"></i> Jump Ropes
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-    </div>
-
-
 
 
 

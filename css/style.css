@@ -67,7 +67,7 @@ body {
 }
 
 .contact-img {
-  height: 350px;
+  height: 400px;
 }
 
 .list-cont {
@@ -101,6 +101,10 @@ body {
   height: 370px;
 }
 
+
+.drop-item {
+  text-decoration: none;
+}
 
 .register-body {
   background-color: #3ec1d5;

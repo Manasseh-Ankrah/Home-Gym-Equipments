@@ -73,32 +73,15 @@ require_once('counter.php');
                         <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                 </ul>
-                <!-- <ul class="navbar-nav d-flex flex-row ms-auto me-3">
-                    <li class="nav-item me-3 me-lg-0 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-plus"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider" />
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul> -->
 
                 <div class="dropdown">
                     <button class="btn btn-primary dropdown-toggle m-3" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Account
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                        <button class="dropdown-item" type="button">View Profile</button>
-                        <button class="dropdown-item" type="button">Edit Profile</button>
-                        <button class="dropdown-item" type="button">Logout</button>
+                        <button class="dropdown-item" type="button"><a href="viewProfile.php" class="drop-item">View Profile</a></button>
+                        <button class="dropdown-item" type="button"><a href="editProfile.php" class="drop-item">Edit Profile</a></button>
+                        <button class="dropdown-item" type="button"><a href="logout.php" class="drop-item">Logout</a></button>
                     </div>
                 </div>
             </div>
@@ -159,7 +142,6 @@ require_once('counter.php');
                     </div>
                 </form>
                 <p id="rss-output"></p>
-
             </div>
         </div>
     </div>

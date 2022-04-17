@@ -104,9 +104,7 @@ include 'server.php';
     <div class="container mt-5 mb-5">
         <div class="row">
             <div class="col-md-6 user-icon-div">
-                <i class="bi bi-instagram user-profile-icon"></i>
-                <!-- <i class="fa fa-profile user-profile-icon"></i> -->
-
+                <i class="fa fa-user user-profile-icon" aria-hidden="true"></i>
             </div>
             <div class="col-md-6">
                 <div>
