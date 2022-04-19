@@ -88,7 +88,7 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="gym_images/watch7.webp" class="d-block w-100 featured-img" alt="gym_images/watch7.webp">
+                    <img src="gym_images/wear1.jpg" class="d-block w-100 featured-img" alt="gym_images/watch7.webp">
                 </div>
             </div>
         </div>

@@ -119,9 +119,16 @@ include 'server.php';
 
 
                                     <hr class="mb-3">
-                                    <div style="display: flex;justify-content:center;align-items:center;">
+                                    <!-- <div style="display: flex;justify-content:center;align-items:center;">
                                         <input type="submit" class="btn btn-primary" class="header-text" id="register" name="create" value="Edit User">
+                                    </div> -->
+
+                                    <div style="display: flex;justify-content:center;align-items:center;">
+                                        <button class="btn btn-primary text-center">
+                                            <a href="server.php?updateId='<?php echo $userId ?>'" class="text-light">Update</a>
+                                        </button>
                                     </div>
+
 
                                     <!-- <button class="btn btn-primary"><a href="wanted.php" class="text-light">Register</a></button> -->
                                     <!-- <P style="color: white;display: flex;justify-content:center;margin-top:10px">Already have an account? ...<a href="login.php"> Login</a></P> -->

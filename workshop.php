@@ -133,7 +133,7 @@
     <div class="row mt-5 mb-5 video-container">
         <div class="col-md-8 ">
             <div class="card mb-3 ">
-                <video src="videos/gym-vid2.mp4" controls="true" autoplay="true"></video>
+                <video src="videos/gym-vid2.mp4" controls="true" loop autoplay></video>
                 <!-- <img src="gym_images/gym1.jpeg" class="card-img-top middle-video" alt="gym_images/gym1.jpeg"> -->
             </div>
         </div>

@@ -55,8 +55,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+
 .middle-video {
   width: 96.5vw;
   height: 350px;
@@ -81,7 +81,6 @@ body {
 
 .info-header {
   color: #fff;
-  /* color: #03899b; */
 }
 
 .info-content {

@@ -89,6 +89,7 @@ if ($result->num_rows > 0) {
         $username = $row["user_name"];
         $phone = $row["phonenumber"];
         $userId = $row["id"];
+
         // echo "id: " . $row["id"] . " - Name: " . $row["firstname"] . " " . $row["lastname"] . "<br>";
     }
 } else {
@@ -102,26 +103,26 @@ if ($result->num_rows > 0) {
 // Update User
 
 // $id = $_GET['updateId'];
-// $updateSql = "select * from users where id=$userId";
+// $updateSql = "select * from users where id=$id";
 // $updateResult = mysqli_query($conn, $updateSql);
+
 
 // if ($updateResult) {
 //     $updateRow = mysqli_fetch_assoc($updateResult);
-//     $update_fName = $updateRow['firstname'];
-//     $update_lName = $updateRow['lastname'];
-//     $update_username = $updateRow['user_name'];
-//     $update_phone = $updateRow['phonenumber'];
+//     $uName = $updateRow['username'];
+//     $uEmail = $updateRow['email'];
+//     $uPassword = $updateRow['password'];
 // }
 
 // if (isset($_POST['submit'])) {
-//     $firstname  = $_POST['firstname'];
-//     $lastname   = $_POST['lastname'];
-//     $username   = $_POST['user_name'];
-//     $phonenumber = $_POST['phonenumber'];
+//     // $id = $userId;
+//     $update_fName = $_POST['firstname'];
+//     $update_lName = $_POST['lastname'];
+//     $update_username = $_POST['user_name'];
+//     $update_phone = $_POST['phonenumber'];
 
-//     // Insert into users (firstname, lastname, user_name, email,postcode, phonenumber, user_password,display_name)
 
-//     $sql = "update users set id=$id,firstname='$firstname',lastname='$lastname',user_name='$user_name' where id=$userId";
+//     $sql = "update users set id=$id,firstname='$update_fName',lastname='$update_lName',user_name='$update_username',phonenumber='$update_phone' where id=$id";
 //     $result = mysqli_query($conn, $sql);
 
 //     if ($result) {
